@@ -1,0 +1,31 @@
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+$space: (
+        none: 0,
+        tiny: .25rem,
+        smaller: .5rem,
+        small: .75rem,
+        medium: 1rem,
+        large: 1.5rem,
+        larger: 1.75rem,
+        big: 2rem,
+        bigger: 2.5rem,
+        biggest: 3rem,
+        huge: 4rem,
+        extreme: 5rem,
+);
+
+$space-default: map-get($space, medium);

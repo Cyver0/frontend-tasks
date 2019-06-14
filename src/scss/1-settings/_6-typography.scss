@@ -1,0 +1,34 @@
+$font-family-regular: 'regular';
+$font-family-light: 'light';
+$font-family-medium: 'medium';
+$font-family-bold: 'bold';
+
+
+@font-face {
+    font-family: $font-family-regular;
+    src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-light;
+    src: url('../fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: $font-family-medium;
+    src: url('../fonts/Quicksand-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-bold;
+    src: url('../fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

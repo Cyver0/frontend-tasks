@@ -1,0 +1,28 @@
+.o-list {
+
+    width: 100%;
+    padding: map-get($space, large);
+    background-color: $color-gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__item {
+
+        color: $color-white;
+        transition: $default-transition;
+        margin-right: map-get($space, medium);
+        cursor: pointer;
+
+        &:hover {
+
+            color: $color-gray-medium;
+        }
+
+        &.active {
+
+            color: $color-blue-dark;
+        }
+    }
+}
